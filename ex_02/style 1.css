@@ -28,13 +28,3 @@ body {
     background-position: center center;
 }
 
-/*
-- Imports Roboto font from Google Fonts to style the text consistently.
-- Body is set to take up the full viewport height and centered with flexbox.
-- The form is centered horizontally with a fixed width of 400px.
-- The input-field container holds the label and input, positioned relative for label alignment.
-- The label is positioned absolutely inside the input-field, with smooth transitions for color and movement.
-- The input has no border except for the bottom, which changes color on focus.
-- Transitions are used on both the input and label for smooth visual changes.
-- When the input is focused or filled, the label moves up and changes size and color to indicate the active state.
-*/
