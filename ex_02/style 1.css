@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#item1 { grid-area: first; }
+#item2 { grid-area: second; }
+#item3 { grid-area: third; }
+#item4 { grid-area: last; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'first second'
+    'third last';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    height: calc(100vh - 20px);
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*
+- Imports Roboto font from Google Fonts to style the text consistently.
+- Body is set to take up the full viewport height and centered with flexbox.
+- The form is centered horizontally with a fixed width of 400px.
+- The input-field container holds the label and input, positioned relative for label alignment.
+- The label is positioned absolutely inside the input-field, with smooth transitions for color and movement.
+- The input has no border except for the bottom, which changes color on focus.
+- Transitions are used on both the input and label for smooth visual changes.
+- When the input is focused or filled, the label moves up and changes size and color to indicate the active state.
+*/
