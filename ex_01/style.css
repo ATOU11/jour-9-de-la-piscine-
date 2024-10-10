@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    font-family: Roboto, serif;
+}
+
+form {
+    margin: auto;
+    display: flex;
+    width: 400px;
+}
+
+.input-field {
+    position: relative;
+    width: 250px;
+    height: 44px;
+    line-height: 44px;
+    margin: auto;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #d3d3d3;
+    cursor: text;
+    transition: all 0.3s ease;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid #d3d3d3;
+    box-shadow: none;
+    color: #111;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-bottom: 2px solid green;
+}
+
+input:focus + label {
+    color: green;
+    transform: translateY(-20px);
+    font-size: 0.8rem;
+}
+
+input:not(:placeholder-shown) + label {
+    transform: translateY(-20px);
+    font-size: 0.8rem;
+}
+
+/*
+- Imports Roboto font from Google Fonts to style the text consistently.
+- Body is set to take up the full viewport height and centered with flexbox.
+- The form is centered horizontally with a fixed width of 400px.
+- The input-field container holds the label and input, positioned relative for label alignment.
+- The label is positioned absolutely inside the input-field, with smooth transitions for color and movement.
+- The input has no border except for the bottom, which changes color on focus.
+- Transitions are used on both the input and label for smooth visual changes.
+- When the input is focused or filled, the label moves up and changes size and color to indicate the active state.
+*/
