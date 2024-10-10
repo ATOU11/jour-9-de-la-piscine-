@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+#character {
+    width: 256px;
+    height: 256px;
+    bottom: 0;
+    position: absolute;
+    background-image: url('walking.png');
+    background-repeat: no-repeat;
+    animation: walk 600ms steps(4) infinite;
+}
+
+@keyframes walk {
+    100% {
+        background-position: -1024px 0;
+    }
+}
